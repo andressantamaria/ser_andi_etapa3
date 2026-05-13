@@ -1,0 +1,167 @@
+Por favor entregar TODO organizado en una única carpeta principal (Drive, ZIP o repositorio central), con buena estructura de carpetas, nombres claros y documentación suficiente para poder revisar el proyecto incluso sin acompañamiento del equipo.
+
+La entrega debe incluir como mínimo:
+
+📁 1. Repositorio del proyecto
+
+* Link del repositorio (GitHub/GitLab/Bitbucket)
+* Código fuente completo
+* Historial de commits
+* Dependencias del proyecto
+* Variables de entorno necesarias (sin exponer credenciales)
+* Instrucciones de instalación y ejecución
+* Estructura organizada del proyecto
+
+📄 2. README del proyecto
+Debe incluir:
+
+* Nombre del proyecto
+* Integrantes
+* Descripción del problema abordado
+* Objetivo general de la solución
+* Tecnologías utilizadas
+* Arquitectura general
+* Flujo de funcionamiento
+* Cómo ejecutar el proyecto
+* Capturas o evidencias visuales
+* Estado actual del desarrollo
+* Limitaciones conocidas
+* Posibles mejoras futuras
+
+📘 3. Documento técnico / informe final
+En PDF o documento formal.
+
+Debe contener:
+
+* Contexto del reto
+* Definición del problema
+* Justificación de la solución
+* Metodología de desarrollo
+* Arquitectura técnica
+* Flujo de datos
+* Bases de datos utilizadas
+* APIs, modelos o servicios implementados
+* Explicación de componentes IA
+* Resultados obtenidos
+* Dificultades encontradas
+* Conclusiones
+* Recomendaciones
+
+👤 4. Manual de usuario
+Explicando:
+
+* Cómo ingresar al sistema
+* Cómo usar la solución
+* Funcionalidades principales
+* Casos de uso
+* Errores comunes o recomendaciones
+
+🛠️ 5. Manual técnico
+Debe incluir:
+
+* Configuración del entorno
+* Instalación
+* Despliegue
+* Variables de entorno
+* Arquitectura del sistema
+* Dependencias
+* Configuración de modelos IA o APIs utilizadas
+* Consideraciones técnicas para mantenimiento
+
+📊 6. Evidencias del proceso de trabajo
+
+Incluir:
+
+* Bitácora o registro de trabajo
+* Cronograma o roadmap
+* Evidencias de reuniones
+* Versiones/prototipos
+* Capturas del desarrollo
+* Decisiones técnicas tomadas
+* Problemas encontrados y cómo fueron solucionados
+* Distribución de roles del equipo
+
+🎤 7. Presentación final
+(PDF, PPT, o Canva exportado)
+
+Debe incluir:
+
+* Problema
+* Solución propuesta
+* Demo
+* Arquitectura
+* Uso de IA
+* Resultados
+* Aprendizajes
+* Retos encontrados
+* Futuro del proyecto
+
+🎥 8. Video demo funcional (recomendado)
+Duración sugerida: 3 a 7 minutos.
+
+Mostrar:
+
+* El problema
+* Funcionamiento de la solución
+* Flujo principal
+* Resultados obtenidos
+* Explicación breve de la IA utilizada
+
+🗂️ 9. Bases de datos o datasets (si aplica)
+
+* Dataset utilizado
+* Scripts de limpieza/procesamiento
+* Diccionario de datos
+* Fuentes de información
+
+🤖 10. Evidencias del uso de Inteligencia Artificial
+Esta parte es MUY importante dentro del proceso de la beca.
+
+Cada equipo deberá explicar:
+
+* Qué herramientas IA utilizaron
+* Qué modelos utilizaron
+* Qué plataformas utilizaron (ChatGPT, Claude, Gemini, Copilot, Kimi, Qwen, Ollama, APIs, modelos open source, etc.)
+* Para qué usaron IA dentro del proyecto
+* Qué tareas resolvió la IA
+* Qué tareas fueron desarrolladas manualmente
+* Cómo fue el proceso de adopción de estas herramientas
+* Qué dificultades encontraron usando IA
+* Qué tan útil consideran actualmente la IA para abordar proyectos reales
+* Qué aprendizajes les dejó trabajar con IA dentro de un desarrollo tecnológico
+
+🧠 11. Reflexión final del equipo 
+importante.
+
+Responder:
+
+* ¿Qué aprendieron durante el proceso?
+* ¿Qué harían diferente?
+* ¿Qué fue lo más difícil?
+* ¿Qué parte consideran más valiosa?
+* ¿Cómo se sienten ahora abordando proyectos apoyados con IA?
+* ¿Qué percepción tienen actualmente sobre el uso de IA en desarrollo tecnológico?
+
+📦 Estructura sugerida de entrega:
+
+Proyecto_Final_EquipoX/
+│
+├── 01_Repositorio/
+├── 02_Documentacion/
+│   ├── Informe_Final.pdf
+│   ├── Manual_Usuario.pdf
+│   ├── Manual_Tecnico.pdf
+│   ├── Bitacora.pdf
+│   └── Evidencias_IA.pdf
+│
+├── 03_Presentacion/
+├── 04_Demo/
+├── 05_Datasets/
+├── 06_Evidencias/
+└── README.md
+
+La entrega deberá enviarse al correo fgutierrc1@eafit.edu.co mediante un único enlace o archivo organizado.
+
+La intención de esta entrega es poder evaluar no solamente el resultado técnico final, sino también el proceso, el pensamiento crítico, la capacidad de documentación, el trabajo colaborativo y la apropiación de herramientas de inteligencia artificial dentro de un contexto de desarrollo real.
+
+Por favor cuidar bastante el orden, claridad y organización de los entregables

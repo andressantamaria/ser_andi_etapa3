@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "descripcion": "Datos perfectos",
+    "datos": {
+      "tipoProceso": "practica_profesional",
+      "esRemunerada": "si",
+      "cedulaEstudiante": "1000111222",
+      "nombre_representante_organizacion": "Carlos Ruiz",
+      "cedula_representante_organizacion": "12345678",
+      "cargo_representante_organizacion": "Gerente",
+      "nombre_organizacion": "Tech Corp S.A.",
+      "nit_organizacion": "900.123.456-7",
+      "nombre_estudiante": "Juan Perez",
+      "programa_estudiante": "Ingeniería",
+      "direccion_organizacion": "Calle 10",
+      "actividades_lista": "1. Dev.\n2. Testing.",
+      "fecha_inicio": "2026-06-01",
+      "fecha_fin": "2026-12-01",
+      "auxilio_letras": "UN MILLON",
+      "auxilio_numeros": "1.000.000"
+    }
+  },
+  {
+    "id": 2,
+    "descripcion": "Fecha mal formada",
+    "datos": {
+      "tipoProceso": "practica_profesional",
+      "esRemunerada": "no",
+      "cedulaEstudiante": "1000111222",
+      "nombre_representante_organizacion": "Ana",
+      "nombre_organizacion": "Empresa X",
+      "nombre_estudiante": "Juan",
+      "fecha_inicio": "10 de mayo",
+      "fecha_fin": "Diciembre de 2026"
+    }
+  },
+  {
+    "id": 3,
+    "descripcion": "Datos faltantes (solo estudiante y poco mas)",
+    "datos": {
+      "tipoProceso": "practica_profesional",
+      "cedulaEstudiante": "1000111222",
+      "nombre_estudiante": "Juan Perez"
+    }
+  },
+  {
+    "id": 4,
+    "descripcion": "Actividades en párrafo desordenado",
+    "datos": {
+      "tipoProceso": "practica_profesional",
+      "cedulaEstudiante": "1000111222",
+      "actividades_lista": "haremos primero pruebas unitarias y luego pasaremos a desarrollo frontend, tambien documentacion"
+    }
+  },
+  {
+    "id": 5,
+    "descripcion": "Dirección y NIT con formato extraño",
+    "datos": {
+      "tipoProceso": "pasantia",
+      "cedulaEstudiante": "1000111222",
+      "direccion_organizacion": "Carrera 45# 12-34 edif la torre",
+      "nit_organizacion": "nit nueve cero cero uno dos tres..."
+    }
+  }
+]

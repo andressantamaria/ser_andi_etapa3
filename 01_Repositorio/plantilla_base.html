@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @page {
+            size: letter;
+            /* Aumentar margin-bottom (2.5cm + 1cm = 3.5cm) para bajar el pie de página */
+            margin: 5.5cm 1in 1.5cm 1in; 
+            
+            @top-left {
+                content: url('formato/Encabezado.png');
+            }
+            @bottom-center {
+                content: url('formato/pie_pag.png');
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            line-height: 1.5;
+            margin-top: 0;
+            margin-bottom: 4cm;
+        }
+        .firma {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        {{ content | safe }}
+    </main>
+    <div class="firma">
+        <img src="formato/Firma.png" width="200" />
+    </div>
+</body>
+</html>
