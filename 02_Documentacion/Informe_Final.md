@@ -46,7 +46,7 @@ El sistema opera en 4 capas:
 ## 9. Dificultades Encontradas
 - **Latencia:** El uso de un LLM local generaba tiempos de espera altos (~18s por documento).
 - **Optimización de Modelo:** Se intentó implementar el modelo más pequeño (`ibm/granite4:350m-h`) para mejorar la velocidad. Si bien la latencia bajó a ~3s, el modelo **perdía contexto** en datos complejos, fallando en un 20% de las validaciones de esquema (generando valores `None` o JSON malformado).
-- **Solución Final:** Se mantuvo el modelo robusto (`granite4:micro-h`) y se optimizó el *prompt* mediante técnicas de "Few-Shot" y mapeo explícito en Python para eliminar la carga inferencial del LLM.
+- **Solución Final:** Se mantuvo el modelo robusto (`granite4:micro-h`) y se optimizó el *prompt* mediante técnicas de "Few-Shot" y mapeo explícito en Python para eliminar la carga inferencial del LLM. Se sugiere el uso de una GPU de gama baja (4 GB VRAM) para mejorar las latencias, costo accesible.  
 
 ## 10. Conclusiones
 La combinación de IA para la interpretación semántica y código determinista para la ejecución es la arquitectura óptima para procesos documentales legales. La IA resuelve la rigidez del algoritmo tradicional sin comprometer la seguridad jurídica que brinda la ejecución determinista.

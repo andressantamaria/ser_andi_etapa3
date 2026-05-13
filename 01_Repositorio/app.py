@@ -14,6 +14,8 @@ CORS(app)
 @app.route('/api/procesar-practica', methods=['POST'])
 def procesar():
     datos = request.json
+    if not datos:
+        return jsonify({"success": False, "mensaje": "Datos vacíos"}), 400
     logging.info(f"Datos crudos recibidos: {datos}")
     logging.info(f"Recibida solicitud para estudiante: {datos.get('cedulaEstudiante')}")
     try:
@@ -28,8 +30,10 @@ def procesar():
 @app.route('/api/buscar-estudiante', methods=['POST'])
 def buscar_estudiante_endpoint():
     datos = request.json
+    if not datos:
+        return jsonify({"success": False, "mensaje": "Datos vacíos"}), 400
     cedula = datos.get('cedula')
-    conn = sqlite3.connect('gestion.db')
+    conn = sqlite3.connect('../05_Datasets/gestion.db')
     cursor = conn.cursor()
     cursor.execute("SELECT nombre, carrera, direccion FROM estudiantes WHERE id = ?", (cedula,))
     data = cursor.fetchone()
@@ -42,7 +46,7 @@ def buscar_estudiante_endpoint():
 def buscar_organizacion_endpoint():
     datos = request.json
     nit = datos.get('nit')
-    conn = sqlite3.connect('gestion.db')
+    conn = sqlite3.connect('../05_Datasets/gestion.db')
     cursor = conn.cursor()
     cursor.execute("SELECT nombre, representante_legal, cedula_representante, cargo_representante, direccion FROM empresas WHERE id = ?", (nit,))
     data = cursor.fetchone()
@@ -82,7 +86,7 @@ def generacion_masiva():
 @app.route('/api/estado-sistema', methods=['GET'])
 def estado_sistema():
     """Verifica el estado del sistema y base de datos"""
-    conn = sqlite3.connect('gestion.db')
+    conn = sqlite3.connect('../05_Datasets/gestion.db')
     cursor = conn.cursor()
     
     cursor.execute("SELECT COUNT(*) FROM estudiantes")

@@ -47,15 +47,16 @@ def seleccionar_plantilla(form_data):
     return 'datos/carta_practica.md'
 
 def buscar_estudiante(cedula):
-    conn = sqlite3.connect('gestion.db')
+    conn = sqlite3.connect('../05_Datasets/gestion.db')
     cursor = conn.cursor()
     cursor.execute("SELECT nombre, carrera FROM estudiantes WHERE id = ?", (cedula,))
     data = cursor.fetchone()
     conn.close()
     return {"nombre": data[0], "carrera": data[1]} if data else None
 
+# Registro de documentos
 def registrar_documento(cedula, tipo, ruta):
-    conn = sqlite3.connect('gestion.db')
+    conn = sqlite3.connect('../05_Datasets/gestion.db')
     cursor = conn.cursor()
     cursor.execute("INSERT INTO historial_documentos (cedula, tipo, ruta) VALUES (?, ?, ?)", (cedula, tipo, ruta))
     conn.commit()
